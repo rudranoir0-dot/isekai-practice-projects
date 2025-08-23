@@ -1,14 +1,28 @@
 # 📓 Learning Log
 
-## Day 1
-- Learned how to run Python scripts (`python hello.py`).
-- Practiced Git basics (add, commit, push).
+# 📓 Learning Log
 
-## Day 2
-- Wrote `test_request.py` with `requests` library.
-- Understood how to track dependencies with `requirements.txt`.
+This file tracks my daily progress while learning Python, Git, and related tools.  
 
-## Day 3
-- Added `.gitignore` to ignore `venv`.
-- Wrote `check_site.py` (HTTP checker script).
-- Updated README for professional look.
+---
+
+## ✅ Day 1
+- Installed **Python** & **Git**.  
+- Wrote first script `hello.py`.  
+- Learned basic Git workflow: `git add`, `git commit`, `git push`.  
+
+---
+
+## ✅ Day 2
+- Practiced Python loops in **REPL**.  
+- Created `test_request.py` to fetch a website using the `requests` library.  
+- Added `requirements.txt` for dependencies.  
+
+---
+
+## ✅ Day 3
+- Set up `.gitignore` to ignore `venv/` & `__pycache__/`.  
+- Fixed Git mistakes (temp files, wrong commits).  
+- Learned about **PowerShell execution policies** & how to bypass them.  
+- Created `check_site.py` (mini HTTP checker tool).  
+
