@@ -55,13 +55,34 @@ pip freeze
 deactivate
 
 
-📡 HTTP Checker Script
-
-This repo includes a simple script to check if a website is online:
-
- python check_site.py
+## 📡 HTTP Checker Script 
 
 
-You’ll be prompted to enter a website URL (e.g. https://google.com) → the script will tell you if it’s ✅ UP, ⚠️ Error, or ❌ DOWN.
+# check_site.py
+import requests
+
+def check_site(url):
+    try:
+        response = requests.get(url, timeout=5)
+        if response.status_code == 200:
+            print(f"✅ {url} is UP (status {response.status_code})")
+        else:
+            print(f"⚠️ {url} responded with status {response.status_code}")
+    except requests.exceptions.RequestException as e:
+        print(f"❌ {url} is DOWN. Error: {e}")
+
+if __name__ == "__main__":
+    site = input("Enter a website URL to check: ")
+    check_site(site)
+
+
+This repository includes a simple tool to verify if a website is accessible:
+
+```bash
+python check_site.py
+```
+
+You'll be asked to enter a website URL (e.g., `https://google.com`).  
+The script will report if the site is **UP** ✅, **Error** ⚠️, or **DOWN** ❌.
 
 
