@@ -23,3 +23,45 @@ It contains simple scripts, a test for HTTP requests, and dependency tracking.
 
 DME.MD
 
+# 🚀 Setup Instructions 
+🐍 Virtual Environment Guide
+
+1.  A virtual environment (venv) is like a private room for Python.
+You create it once per project: 
+```python
+ 
+```python -m venv venv
+
+
+Then, every time you open this project later, you just enter it:
+ .\venv\Scripts\activate   # Windows PowerShell
+ source venv/bin/activate  # Mac/Linux
+
+ - When you’re done, you can leave it:
+deactivate
+
+2.  If PowerShell blocks it (execution policy error), run:
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+Then activate again.
+
+3. Install Dependencies
+pip install -r requirements.txt
+
+4. Check Installed Packages (optional)
+pip freeze
+
+5. Exit Virtual Environment
+deactivate
+
+
+📡 HTTP Checker Script
+
+This repo includes a simple script to check if a website is online:
+
+ python check_site.py
+
+
+You’ll be prompted to enter a website URL (e.g. https://google.com) → the script will tell you if it’s ✅ UP, ⚠️ Error, or ❌ DOWN.
+
+
