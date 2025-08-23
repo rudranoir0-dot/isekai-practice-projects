@@ -1,14 +1,37 @@
 # io_practice.py
+# Simple I/O practice for Sekai Week 1 (no API calls)
 
-# Ask the user their favorite anime
-anime = input("What's your favorite anime? ")
+def main():
+    print("=== AI Vibe: I/O Practice ===")
 
-# Ask the user their favorite character
-character = input("And who's your favorite character? ")
+    # Collect user input
+    anime = input("Enter your favorite anime: ").strip()
+    character = input("Enter your favorite character from that anime: ").strip()
 
-# Print a formatted line
-print(f"Your favorite anime is '{anime}' and your favorite character is '{character}' ❤️")
+    # Basic validation (keeps it friendly if left blank)
+    if not anime:
+        anime = "Unknown Anime"
+    if not character:
+        character = "Unknown Character"
 
-# Tiny stub "prompt" string (just pretend, no API today)
-prompt = f"Imagine a story where {character} from {anime} is transported to another world..."
-print("Prompt stub:", prompt)
+    # Formatted summary line
+    summary = f"Got it. Favorite anime: {anime} | Character: {character}"
+    print(summary)
+
+    # Tiny stub 'prompt' string we’ll use later for an LLM (no API today)
+    # A 'prompt' is the instruction we would send to a model.
+    vibe_prompt = (
+        "Write a 3–4 sentence scene in a light, anime-inspired style featuring "
+        f"{character} from {anime}. Keep it PG, energetic, and vivid. "
+        "Avoid spoilers. No real-world brands."
+    )
+
+    print("\n--- Prompt Stub (for later use) ---")
+    print(vibe_prompt)
+
+    # End marker
+    print("\n=== Done ===")
+
+if __name__ == "__main__":
+    main()
+
