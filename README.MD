@@ -1,12 +1,46 @@
-echo "#sekai week-1" README.MD
+\# sekai-week1 🚀
 
-echo "">>README.MD
 
-echo "This is my python = Git project. it contains:" >> README.MD
 
-echo "- hello.py (script)" >> README.MD
+This is my first Python + Git project, built as part of my learning journey.  
 
-echo "- test\_requests.py (makes a web request using request library)" >> README.MD
+It contains simple scripts, a test for HTTP requests, and dependency tracking.
 
-echo "- requirements.txt (dependencies)" >>README.MD
+
+
+---
+
+
+
+\## 📂 Project Structure
+
+
+
+\- \*\*hello.py\*\* → Simple Python script  
+
+\- \*\*test\_request.py\*\* → Makes a web request using the `requests` library  
+
+\- \*\*requirements.txt\*\* → List of dependencies  
+
+\- \*\*venv/\*\* → Virtual environment (not pushed to GitHub)  
+
+
+
+---
+
+
+
+\## ⚙️ Setup
+
+
+
+1\. Clone this repo:
+
+&nbsp;  ```bash
+
+&nbsp;  git clone https://github.com/rudranoir0-dot/sekai-week1.git
+
+&nbsp;  cd sekai-week1
+
+DME.MD
 
