@@ -1,7 +1,5 @@
 # 📓 Learning Log
 
-# 📓 Learning Log
-
 This file tracks my daily progress while learning Python, Git, and related tools.  
 
 ---
