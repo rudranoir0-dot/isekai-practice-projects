@@ -7,26 +7,18 @@ This is my first Python + Git project, built as part of my learning journey.
 It contains simple scripts, a test for HTTP requests, and dependency tracking.
 
 
-
----
-
-
-
-\## 📂 Project Structure
+##📂 Project Structure
 
 
 
-\- \*\*hello.py\*\* → Simple Python script  
+\- hello.py → Simple Python script  
 
-\- \*\*test\_request.py\*\* → Makes a web request using the `requests` library  
+\- test\_request.py → Makes a web request using the `requests` library  
 
-\- \*\*requirements.txt\*\* → List of dependencies  
+\- requirements.txt\*\* → List of dependencies  
 
-\- \*\*venv/\*\* → Virtual environment (not pushed to GitHub)  
+\- venv/ → Virtual environment (not pushed to GitHub)  
 
-
-
----
 
 
 
