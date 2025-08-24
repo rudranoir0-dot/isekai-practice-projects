@@ -1,141 +1,74 @@
 # Sekai Week 1
-Practicing Python + Git + Requests library
+Practicing Python + Git + Requests library+ LLM MINI Project
 This is my first Python + Git project, built as part of my learning journey.  
 It contains simple scripts, a test for HTTP requests, and dependency tracking.
 
+
 ## 📂 Project Structure
 
-- hello.py → Simple Python script  
-- test_request.py → Makes a web request using the `requests` library  
-- requirements.txt → List of dependencies  
-- venv/ → Virtual environment (not pushed to GitHub)
-
-\## ⚙️ Setup
-1\. Clone this repo:
-
-&nbsp;  ```bash
-
-&nbsp;  git clone https://github.com/rudranoir0-dot/sekai-week1.git
-
-&nbsp;  cd sekai-week1
-
-DME.MD
-
-
-# 🚀 Project Setup & Usage
-
-Welcome! This repository contains a simple **HTTP Checker Tool** 🕵️‍♂️ that verifies if a website is accessible.
-It also includes setup instructions for using a **Python virtual environment (venv)**.
+* `hello.py` → Simple Python script
+* `io_practice.py` → Collects user’s favorite anime/character, shows formatted summary
+* `test_request.py` → Makes a web request using the `requests` library
+* `check_site.py` → HTTP checker script (Day 5 milestone)
+* `story-gen.py` → Calls a Hugging Face Space API to generate short anime-style stories (Day 6 milestone)
+* `requirements.txt` → List of dependencies
+* `venv/` → Virtual environment (not pushed to GitHub)
 
 ---
 
-## 🐍 Virtual Environment Setup
+## ⚙️ Setup & Usage
 
-1. **Create a virtual environment** (only once per project):
-
-   ```bash
-   python -m venv venv
-   ```
-
-2. **Activate the environment**:
-
-   * Windows PowerShell:
-
-     ```bash
-     .\venv\Scripts\activate
-     ```
-   * Mac/Linux:
-
-     ```bash
-     source venv/bin/activate
-     ```
-
-3. **Fix PowerShell execution policy (if blocked)**:
-
-   ```powershell
-   Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-   ```
-
-   Then activate again.
-
-4. **Install dependencies**:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-5. **(Optional) Check installed packages**:
-
-   ```bash
-   pip freeze
-   ```
-
-6. **Exit the virtual environment**:
-
-   ```bash
-   deactivate
-   ```
-
----
-
-## 📡 HTTP Checker Script
-
-The core of this project is `check_site.py`, which checks whether a website is online.
-
-```python
-import requests
-
-def check_site(url):
-    try:
-        response = requests.get(url, timeout=5)
-        if response.status_code == 200:
-            print(f"✅ {url} is UP (status {response.status_code})")
-        else:
-            print(f"⚠️ {url} responded with status {response.status_code}")
-    except requests.exceptions.RequestException as e:
-        print(f"❌ {url} is DOWN. Error: {e}")
-
-if __name__ == "__main__":
-    site = input("Enter a website URL to check: ")
-    check_site(site)
-```
-
----
-
-## ▶️ How to Run
-
-From inside the virtual environment:
+1. Clone this repo:
 
 ```bash
+git clone https://github.com/rudranoir0-dot/sekai-week1.git
+cd sekai-week1
+```
+
+2. Create and activate a virtual environment:
+
+```bash
+python -m venv venv
+.\venv\Scripts\activate   # Windows PowerShell
+source venv/bin/activate  # Mac/Linux
+```
+
+3. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Run the scripts (examples):
+
+```bash
+python io_practice.py
 python check_site.py
+python story-gen.py
 ```
 
-Enter a website URL (e.g., `https://google.com`) when prompted.
-The script will report if the site is:
+Example run of `check_site.py`:
 
-* ✅ **UP** (status 200)
-* ⚠️ **Responded with error status**
-* ❌ **DOWN** (network error, timeout, etc.)
-
----
-
-## 📂 Project Structure
-
-```
-sekai-week1/
-│-- venv/               # Virtual environment (ignored in Git)
-│-- check_site.py        # HTTP checker script
-│-- requirements.txt     # Dependencies list
-│-- README.md            # Project documentation
+```bash
+Enter a website URL to check: https://google.com
+✅ https://google.com is UP (status 200)
 ```
 
 ---
 
-## 🌟 Notes
+## 📈 Week 1 Progress (Milestones Only)
 
-* Always activate the virtual environment before running the script.
-* Keep dependencies tracked in `requirements.txt` (`pip freeze > requirements.txt`).
-* This project is a starting point for learning **Python scripting, HTTP requests, and environment management**.
+✅ Learned basic **Python syntax** (print, loops, input/output).
+✅ Practiced **Git workflow** (init, add, commit, push).
+✅ Built small scripts (`hello.py`, `io_practice.py`).
+✅ Used **Requests library** to fetch data from the web.
+✅ Built a working **site checker** (`check_site.py`).
+✅ First **API integration with Hugging Face Space** (`story-gen.py`) → generated anime-style short stories.
 
 ---
+
+## 🏆 Key Takeaway
+
+By the end of Week 1, I moved from **basic Python scripts** → to **web requests** → to my **first LLM-powered project**.
+This closed the loop from coding fundamentals to a working AI mini-project.
 
