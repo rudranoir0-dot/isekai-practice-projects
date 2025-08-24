@@ -231,15 +231,11 @@ Understood. Here is your **updated single-file Learning Log (Days 1–6)** with 
 
 * **io\_practice.py** → first interactive console workflow, foundation for future prompts.
 
----
-
-Got it 👍 Since you already have **Day 1–5 detailed README/logs**, here’s the **Day 6 write-up** rewritten in the same structured style as the earlier days so it fits perfectly when merged later.
 
 ---
 
 # 📓 Daily Learning Log — Day 6
 
-## Theme
 
 **The Struggle with Hugging Face (and Victory): First LLM Story Generator**
 
